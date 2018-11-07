@@ -464,7 +464,18 @@ div#about > p {
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-bottom: 10px;
-
+}
+form input{
+	width: 100%;
+	padding: 5px 5px;
+	margin-bottom: 20px;
+  text-align: center;
+}
+input[type=submit] {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 17em;
 }
 
 /*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
