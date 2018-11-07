@@ -1,0 +1,488 @@
+/*Andy Kukuc
+Daniel Rybski
+Geldi Omeri
+Professor Krieglstien
+10-24-2018
+Project 2 css page */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}a
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* select normalize css */
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+/* Mobile first css */
+form {
+  margin: 0 0 5px 0;
+  width: 100%;
+}
+form > label,
+legend {
+	width: 100%;
+  float: none;
+}
+
+label {
+  width: 100%;
+  text-align: center;
+}
+
+form > fieldset {
+  width: 80%;
+  float: none;
+}
+
+input[type=email],
+input[type=text],
+input[type=date] {
+  width: 95%;
+}
+
+/*Navigation Bar Styling*/
+
+.nav {
+  width: 100%;
+  background-color: #2F3648;
+  text-align: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2F3648;
+  display: inline-block;
+}
+
+.nav li {
+  float: left;
+  font-size: 1.4em;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #BA27C4;
+}
+
+.nav a:active {
+  background-color: #B77DBB;
+  color: #333;
+}
+
+/*Background Color and Font Stacks*/
+
+body, html {
+  background-color: White;
+  font-family:"Segoe UI", Arial, Times New Roman;
+  color: black;
+}
+
+.title{
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.banner_pic {
+  max-width: 135px;
+  max-height: 132px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position: static;
+	padding: 1%;
+}
+
+/*Home Page Specific CSS. DON'T TOUCH! - Geldi Omeri*/
+
+div#slideShow{
+  /* Main wrapper for all images */
+	max-width: 100%;
+	max-height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+	width: 100%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+div#isud{
+	background-color: #2F3648;
+	color: white;
+	/* Maybe create whitespace on the sides
+	margin-left: 1%;
+	margin-right: 1%;
+	*/
+	text-align: center;
+}
+div#isud > h1{
+	font-size: 1.44em;
+	font-weight: bold;
+	padding: 25px;
+}
+
+div#isud > h2{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px;
+}
+
+div#isud > p{
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+}
+
+div#isudVideo{
+	max-height: 50%;
+  max-width: 96%;
+  margin: auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.isudVideo{
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+div#congress{
+	background-color: #858C9B;
+	margin-top: 1%;
+	margin-bottom: 0%;
+	padding-bottom: 1px;
+	text-align: center;
+}
+
+div#congress > h1{
+	font-size: 1.44em;
+	font-weight: bold;
+	padding: 18px;
+	padding-bottom: 12px;
+}
+
+div#congress > p{
+	padding: 2px;
+	padding-bottom: 5px;
+	color: #2F3648;
+}
+
+p.end{
+	padding-bottom: 10px;
+}
+
+img#DaU{
+	width: 100%;
+}
+
+p#DaUText{
+	margin-top: 5px;
+	margin-bottom: 18px;
+	font-size: 0.8em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #2F3648;
+	text-decoration: none;
+}
+
+footer{
+	background-color: #2F3648;
+	color: white;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/*Andy Kukuc about.html css DON'T TOUCH*/
+#map { /*google maps api key no longer free*/
+  height: 250px;
+  width: 100%;
+  border: 5px solid black;
+  margin-top: 20px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div#about > h1 {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+div#about > h3 {
+  font-size:1.2em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+div#about > p {
+  margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-bottom: 10px;
+
+}
+
+/*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
+
+@media screen and (max-width: 480px) {
+  form > label,
+	legend {
+  	text-align: center;
+    width: 100%;
+  }
+}
+
+/*Tablets, Small laptops*/
+
+@media screen and (min-width: 768px){
+}
+
+/*Desktops, Large Monitors*/
+
+@media screen and (min-width: 1024px){
+}
