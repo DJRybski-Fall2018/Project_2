@@ -239,8 +239,11 @@ label {
 }
 
 form > fieldset {
-  width: 80%;
-  float: none;
+	left: 50%;
+	top: 50%;
+	margin-left: -25%;
+	position: absolute;
+	margin-top: -25%;
 }
 
 input[type=email],
@@ -481,7 +484,7 @@ input[type=submit] {
 	text-align: center;
 	width: 10em;
 }
-label{
+.select{
 	text-align: center;
 }
 /*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
