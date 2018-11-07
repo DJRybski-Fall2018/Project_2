@@ -474,18 +474,13 @@ input{
 	width: 100%;
 	padding: 5px 5px;
 	margin-bottom: 15px;
-  	text-align: center;
 }
 input[type=submit] {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 15px;
 	margin-top: 15px;
-	text-align: center;
 	width: 10em;
-}
-.select{
-	text-align: center;
 }
 /*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
 
