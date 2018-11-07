@@ -469,13 +469,13 @@ form input{
 	width: 100%;
 	padding: 5px 5px;
 	margin-bottom: 20px;
-  text-align: center;
+  	text-align: center;
 }
 input[type=submit] {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  width: 17em;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 10em;
 }
 
 /*Larger Phones, Side View on Phones, and Small Tablet Screen Size*/
@@ -484,7 +484,7 @@ input[type=submit] {
   form > label,
 	legend {
   	text-align: center;
-    width: 100%;
+  	width: 100%;
   }
 }
 
